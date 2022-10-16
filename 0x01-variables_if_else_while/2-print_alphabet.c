@@ -9,14 +9,15 @@
 
 int main(void)
 {
-	char letter = 97;
+	int letter = 97
 
 	while (letter < 123)
 	{
 		putchar(letter);
 		letter++;
 	}
-	putchar('\n');
-	
+	putchar(10);
+
 	return (0);
+
 }
