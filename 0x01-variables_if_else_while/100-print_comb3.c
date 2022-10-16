@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * mai - print double digit combos
+ * main - print double digit combos
  * Description: print double digit combos
  * Return: (0) success
  */
@@ -29,7 +29,7 @@ int main(void)
 			j++;
 		}
 
-		puchar(10);
+		putchar(10);
 
 		return (0);
 	}
