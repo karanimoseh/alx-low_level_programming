@@ -6,7 +6,7 @@
  * Return: always 0
  */
 
-void time_table(void)
+void print_times_table(void)
 {
 	int num, mult, prod;
 
