@@ -22,7 +22,7 @@ void time_table(void)
 			prod = num * mult;
 
 			if (prod <= 9)
-				_putchar(' ')
+				_putchar(' ');
 			else
 				_puchar((prod / 10) + '0');
 			
