@@ -1,32 +1,35 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * print_diagonal - prints a diagonal
- * @n: parameter
- * Return: returns nothing
+ * print_diagonal - prints a diagonal line
+ * @n: number of times to print dash
+ *
+ * Return: void
  */
 
 void print_diagonal(int n)
 {
-	int len, space;
+	int a = 0;
 
-	if (n > 0)
+	if (n < 0 || n == 0)
 	{
-		for (len = 0; len < n; len++)
+		_putchar('\n');
+	}
+	else
+	{
+		for (a = 0; a < n; a++)
 		{
-			for (space = 0; space < len; space++)
+			if (n > 1)
 			{
-				putchar(' ');
-			}
+				int i;
 
-			putchar('\\');
-
-			if (len == ( n - 1))
-			{
-				continue;
+				for (i = 0; i < a ; i++)
+				{
+					_putchar(' ');
+				}
+				_putchar(' \\');
+				_putchar('\n');
 			}
-			putchar('\n');
 		}
 	}
 }
